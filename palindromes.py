@@ -2,19 +2,14 @@
 #5/17/18
 #warmup17.py
 
-listS = []
-listR = []
+dictionary = open("engmix.txt")
 
-
-file = open('engmix.txt')
-
-for line in file:
-    word = line.strip()
-    for word in line:
-        listS.append(word)
-        
-print(listS
-    
+for word in dictionary:
+    word = word.strip()
+    reg = list(word)
+    reg.reverse()
+    if list(word) == reg:
+        print(word)
     
     
     
